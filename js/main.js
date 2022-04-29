@@ -5,21 +5,18 @@ window.onload = function () {
 };
 
 function initActiveTab() {
-    const defaultTabId = "home_tab";
+    const defaultTabId = "transactions";
 
     // Global variable to store default selection
     let currentSelection = document.getElementById(defaultTabId);
 
-    const navLinks = document.querySelectorAll("nav a");
+    const navLinks = document.querySelectorAll("div a");
 
     let tabList = [];
     navLinks.forEach(function (element) {
             tabList.push(element.hash)
         }
     );
-
-    console.log('tab list : ');
-    console.log(tabList);
 
     // Change active tab
     function changeActiveTab(targetAnchor) {
@@ -34,18 +31,13 @@ function initActiveTab() {
     navLinks.forEach(function (e) {
         e.onclick = function () {
             const targetAnchor = e.getAttribute("href");
-
-            console.log("targetAnchor", targetAnchor);
-
             changeActiveTab(targetAnchor);
         };
     });
 
     const hash = window.location.hash;
-    console.log('hush details : ');
-    console.log(hash);
     if (hash.length > 0 && hash.indexOf("_tab") > 0) {
-        // TODO: Load a different tab than default. Please check if such tab exists first. If not fallback to defaultTabId.
+        // Load a different tab than default. If not fallback to defaultTabId.
         if (tabList.includes(hash)) {
             changeActiveTab(hash)
         } else changeActiveTab(defaultTabId);
