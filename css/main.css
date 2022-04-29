@@ -1,0 +1,61 @@
+/*********************************************** Body part */
+body, header, footer {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/*********************************************** Header part */
+header {
+    background-color: black;
+    color: peru;
+    overflow: auto;
+}
+
+header h1 {
+    text-align: center;
+    width: 100%;
+}
+
+/* Menu part */
+
+
+ a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    background-color: inherit;
+    border: none;
+    width: 100%;
+    text-decoration: none;
+}
+
+ a:hover {
+    background-color: darkolivegreen;
+}
+
+/*********************************************** Main part */
+#main-screen {
+    height: 100%;
+    display: block;
+    padding: 0;
+}
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+
+}
+
+/**** Hide all tabs by default */
+.menu_info {
+    display: none;
+}
+
+/**** Show only active tab*/
+.show-div {
+    display: block;
+}
+
+
