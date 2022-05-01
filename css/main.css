@@ -51,12 +51,17 @@ a {
     border: none;
     width: 100%;
     text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 a:hover {
     background-color: darkolivegreen;
 }
 
+ {
+
+}
 /*********************************************** Content part */
 
 #navigation_content {
@@ -66,16 +71,19 @@ a:hover {
 }
 
 table {
-    width: 100%;
+    width: 90%;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-table, td, th {
-    border-style: dashed dashed;
-
+td {
+    border-style: none none dashed;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-th{
-    padding-left: 10px;
+tr {
+    text-align: left;
 }
 
 /* On smaller screens, decrease text size */
