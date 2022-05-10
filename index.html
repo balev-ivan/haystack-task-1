@@ -5,12 +5,13 @@
     <title>haystack - task 1</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gugi">
 </head>
 <body>
 
 <!--------------------- Site Navigation ---------------------->
 <div id="side_navigation">
-    <h1> &#9776; haystack</h1>
+    <h1><span>&#9776;</span> haystack</h1>
     <div id="user_box">
         <label for="haystack_users">Hasan Gursoy</label>
         <br>
@@ -19,9 +20,10 @@
             <option value="ivan.balev">ivan.balev@gmail.com</option>
         </select>
     </div>
-    <span id="product_static">Product:</span>
-    <span id="product_label">OpenPayd</span>
-
+    <div id="product">
+        <span id="product_static">Product:</span>
+        <span id="product_label">OpenPayd</span>
+    </div>
     <a href="#transactions">Transactions</a>
     <a href="#users">Users</a>
     <a href="#kyc_applicants">KYC Applicants</a>
@@ -42,15 +44,18 @@
     <div id="transactions" class="menu_info">
 
         <table>
+            <thead>
             <tr>
-                <th>Company name</th>
-                <th>Country</th>
-                <th>Registration No.</th>
-                <th>Save No.</th>
+                <th style="width:25%">Company name</th>
+                <th style="width:10%"> Country</th>
+                <th style="width:15%">Registration No.</th>
+                <th style="width:10%">Save No.</th>
                 <th>Address</th>
                 <th>Company Status</th>
                 <th></th>
             </tr>
+            </thead>
+            <tbody>
             <tr>
                 <td>Apple</td>
                 <td>US</td>
@@ -58,7 +63,7 @@
                 <td>US221139727</td>
                 <td>1 Apple Park Way, Cupertino, CA, 95014</td>
                 <td>-</td>
-                <td>...</td>
+                <td>&#8942;</td>
             </tr>
             <tr>
                 <td>Apple</td>
@@ -67,7 +72,7 @@
                 <td>US221139727</td>
                 <td>1 Apple Park Way, Cupertino, CA, 95014</td>
                 <td>-</td>
-                <td>...</td>
+                <td>&#8942;</td>
             </tr>
             <tr>
                 <td>Apple</td>
@@ -76,7 +81,7 @@
                 <td>US221139727</td>
                 <td>1 Apple Park Way, Cupertino, CA, 95014</td>
                 <td>-</td>
-                <td>...</td>
+                <td>&#8942;</td>
             </tr>
             <tr>
                 <td>Apple</td>
@@ -85,9 +90,9 @@
                 <td>US221139727</td>
                 <td>1 Apple Park Way, Cupertino, CA, 95014</td>
                 <td>-</td>
-                <td>...</td>
+                <td>&#8942;</td>
             </tr>
-
+            </tbody>
         </table>
 
 
