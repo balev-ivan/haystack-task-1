@@ -86,9 +86,7 @@ a:hover {
     background-color: darkolivegreen;
 }
 
-{
 
-}
 /*********************************************** Content part */
 
 #navigation_content {
@@ -120,7 +118,7 @@ tr {
 }
 
 /**** Hide all tabs by default */
-.menu_info {
+.menu_info, .user_info {
     display: none;
 }
 
@@ -129,4 +127,106 @@ tr {
     display: block;
 }
 
+/*********************************************** User tab */
+/* Menu part */
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: grey;
+    text-align: center;
+    padding: 16px;
+    background-color: inherit;
+    border: none;
+    width: 100%;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: darkolivegreen;
+}
+
+#user_id_pending {
+    width: 100%;
+    height: 60px;
+    border-style: none none solid;
+    border-width: thin;
+    border-color: grey;
+}
+
+#user_pending_h2 {
+    display: block;
+    width: 150px;
+    margin-left: 15px;
+    color: #6c6666;
+}
+
+#user_pending_h2 span {
+    padding-right: 10px;
+    color: #6c6666;
+}
+
+#pending_customer {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding-right: 5px;
+    background-color: #c2bbbb;
+    font-size: 12px;
+}
+
+.float_left {
+    display: inline-block;
+    float: left;
+}
+
+.float_right {
+    display: inline-block;
+    float: right;
+    color: #6c6666;
+    background-color: white;
+    padding-right: 30px;
+}
+
+.float_right span {
+    display: inline-block;
+    background-color: #c2bbbb;
+    width: 20px;
+    padding-left: 8px;
+}
+
+#user_tabs {
+    display: block;
+    float: left;
+    width: 100%;
+    padding-left: 30px;
+}
+
+#documents_grid {
+    display: grid;
+    grid-template-columns: 10% 10% 65% 5% 5% 5%;
+    grid-template-rows: 50px;
+    width: 100%;
+    height: 500px;
+    border: solid 1px red;
+}
+
+.column {
+    margin: 10px;
+    padding: 10px;
+    border: solid 1px blue;
+}
+
+.row {
+    border: solid 1px greenyellow;
+}

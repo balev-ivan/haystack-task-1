@@ -24,24 +24,24 @@
         <span id="product_static">Product:</span>
         <span id="product_label">OpenPayd</span>
     </div>
-    <a href="#transactions">Transactions</a>
-    <a href="#users">Users</a>
-    <a href="#kyc_applicants">KYC Applicants</a>
-    <a href="#kyc_providers">KYC Providers</a>
-    <a href="#app_mngmnt">Application Management</a>
-    <a href="#case_asnmnt">Case Assignments</a>
-    <a href="#cases">Cases</a>
-    <a href="#rules">Rules</a>
-    <a href="#rule_func">Rules Functions</a>
-    <a href="#rule_monitor">Rule Vetos Monitor</a>
-    <a href="#risk_country">Country Risk</a>
-    <a href="#risk_words">Risk Words</a>
-    <a href="#Administration">Administration</a>
+    <a href="#transactions_tab">Transactions</a>
+    <a href="#users_tab">Users</a>
+    <a href="#kyc_applicants_tab">KYC Applicants</a>
+    <a href="#kyc_providers_tab">KYC Providers</a>
+    <a href="#app_mngmnt_tab">Application Management</a>
+    <a href="#case_asnmnt_tab">Case Assignments</a>
+    <a href="#cases_tab">Cases</a>
+    <a href="#rules_tab">Rules</a>
+    <a href="#rule_func_tab">Rules Functions</a>
+    <a href="#rule_monitor_tab">Rule Vetos Monitor</a>
+    <a href="#risk_country_tab">Country Risk</a>
+    <a href="#risk_words_tab">Risk Words</a>
+    <a href="#administration_tab">Administration</a>
 </div>
 
 <!--------------------- Navigation Content ---------------------->
 <div id="navigation_content">
-    <div id="transactions" class="menu_info">
+    <div id="transactions_tab" class="menu_info">
 
         <table>
             <thead>
@@ -94,11 +94,82 @@
             </tr>
             </tbody>
         </table>
-
-
     </div>
-    <div id="users" class="menu_info">
-        <h2>Users</h2>
+
+    <div id="users_tab" class="user_info">
+        <nav>
+            <div id="user_id_pending">
+                <h2 id="user_pending_h2" class="float_left"><span>&larr;</span>OpenPayd</h2>
+                <p class="float_left" id="pending_customer">Pending on Customer</p>
+                <p class="float_right">ID: 202204-003-000037 <span>&#8942;</span></p>
+            </div>
+            <ul id="user_tabs">
+                <li><a href="#info_tab">Info</a></li>
+                <li><a href="#documents_tab">Documents</a></li>
+                <li><a href="#id_verify_tab">ID Verify</a></li>
+                <li><a href="#check_list_tab">Website Checklist</a></li>
+                <li><a href="#messages_tab">Messages</a></li>
+                <li><a href="#notes_tab">Notes</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <div id="info_tab" class="user_info">
+                <h2>Info</h2>
+            </div>
+            <div id="documents_tab" class="user_info">
+                <div id="documents_grid"></div>
+            </div>
+            <div id="id_verify_tab" class="user_info">
+                <h2>ID Verify</h2>
+            </div>
+            <div id="check_list_tab" class="user_info">
+                <h2>Website Checklist</h2>
+            </div>
+            <div id="messages_tab" class="user_info">
+                <h2>Messages</h2>
+            </div>
+            <div id="notes_tab" class="user_info">
+                <h2>Notes</h2>
+            </div>
+        </div>
+    </div>
+
+    <div id="kyc_applicants_tab" class="menu_info">
+        <h2>KYC Applicants</h2>
+    </div>
+    <div id="kyc_providers_tab" class="menu_info">
+        <h2>KYC Providers</h2>
+    </div>
+
+    <div id="app_mngmnt_tab" class="menu_info">
+        <h2>Application Management</h2>
+    </div>
+
+    <div id="case_asnmnt_tab" class="menu_info">
+        <h2>Case Assignments</h2>
+    </div>
+
+    <div id="cases_tab" class="menu_info">
+        <h2>Cases</h2>
+    </div>
+    <div id="rules_tab" class="menu_info">
+        <h2>Rules</h2>
+    </div>
+    <div id="rule_func_tab" class="menu_info">
+        <h2>Rules Functions</h2>
+    </div>
+    <div id="rule_monitor_tab" class="menu_info">
+        <h2>Rule Vetos Monitor</h2>
+    </div>
+    <div id="risk_country_tab" class="menu_info">
+        <h2>Country Risk</h2>
+    </div>
+    <div id="risk_words_tab" class="menu_info">
+        <h2>Risk Words</h2>
+    </div>
+    <div id="administration_tab" class="menu_info">
+        <h2>Administration</h2>
     </div>
 </div>
 
@@ -106,3 +177,6 @@
 <script src="js/main.js"></script>
 </body>
 </html>
+
+
+
